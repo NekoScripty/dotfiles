@@ -64,5 +64,5 @@ bash DFPKGS.sh
 ```
 <div align="center">
   <img src="Assets/chi.png" alt="Chibi" width="200">
-  <h3>"Stay Comfy, Stay Code"</h3>
+  <blockquote>"Stay Comfy, Stay Code"<blockquote>
 </div>
