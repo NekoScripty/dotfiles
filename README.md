@@ -62,3 +62,7 @@ git clone https://github.com/NekoScripty/Dotfiles.git
 sudo chmod +x DFPKGS.sh &&
 bash DFPKGS.sh
 ```
+<div align="center">
+  <img src="Assets/chi.png" alt="Chibi" width="200">
+  <h3>"Stay Comfy, Stay Code"</h3>
+</div>
