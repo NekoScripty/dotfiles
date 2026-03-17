@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&text=My%20Desktop%20Rice&fontSize=40" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&text=Desktop%20Rice&fontSize=40" width="100%" />
 </p>
 
 # 🌑 My Dotfiles
