@@ -2,11 +2,10 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%" />
 </p>
 
-<p align="center">
-  <h1>
+<h1 align="center">
      🌑 NekoDots
   </h1>
-  <p>
+  <p align="center">
       A Professional, Minimalist BSPWM Environment for Arch Linux
   </p>
 </p>
