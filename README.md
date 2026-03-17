@@ -59,5 +59,6 @@ git clone https://github.com/NekoScripty/Dotfiles.git
 ```
 ## ⚙️ Then Auto Installation Script 
 ```bash
+sudo chmod +x DFPKGS.sh &&
 bash DFPKGS.sh
 ```
