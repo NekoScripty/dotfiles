@@ -11,9 +11,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/License-GPLv3-000000?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/WM-bspwm-000000?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Distro-Arch-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-GPLv3-202020?style=for-the-badge&logo=gnu&logoColor=white" />
+  <img src="https://img.shields.io/badge/WM-bspwm-483699?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Distro-Arch-1793D1?style=for-the-badge&logo=arch-linux" />
 </p>
 
 ## 📸 Visual Showcase
