@@ -40,6 +40,20 @@ Keybindings are handled by `sxhkd`. The logic is grouped by "System", "Media", a
 | **System Resource Monitor** | `F5` |
 
 ---
+## Preview
+
+<h3 align="center">Screenshots</h3>
+
+<table border="0">
+  <tr>
+    <td><img src="screenshots/clean.png" alt="Clean Desktop" width="100%"></td>
+    <td><img src="screenshots/terminal.png" alt="Terminal Setup" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/browser.png" alt="Browser Rice" width="100%"></td>
+    <td><img src="screenshots/code.png" alt="Editor/Code" width="100%"></td>
+  </tr>
+</table>
 
 ## 🔋 Modular Infrastructure
 The configuration is split to support both high-end desktops and portable machines:
