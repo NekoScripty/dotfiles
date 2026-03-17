@@ -63,7 +63,9 @@ Keybindings are handled by `sxhkd`. The logic is grouped by "System", "Media", a
 The configuration is split to support both high-end desktops and portable machines:
 
 * **Desktop: (`config.ini`)**: Optimized for static network setups and multi-monitor layouts.
-* **Laptop: Remove The LAP(`configLAP.ini`)**: Features dynamic battery ramps (`` to ``) and backlight control modules.
+> [!NOTE]
+> **Laptop Setup:** To enable the battery module, remove `config.ini` and delete the word `LAP` from the configuration.
+* **Laptop: (`configLAP.ini`)**: Features dynamic battery ramps (`` to ``) and backlight control modules.
 * **Compositor**: Glx-backend optimized for NVIDIA/Intel to ensure tear-free animations.
 
 ---
