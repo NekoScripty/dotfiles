@@ -1,0 +1,174 @@
+# -----------------------------------------------------------------------------
+# WM INDEPENDENT & SYSTEM ADMIN
+# -----------------------------------------------------------------------------
+# Refresh Bspwm
+super + alt + r
+    bspc wm -r
+
+# Close focused window
+super + q
+    bspc node -c
+
+# Terminals
+super + t
+    xterm
+
+super + alt + t
+    konsole
+
+# Launchers
+super + d
+    dmenu_run
+
+super + r
+    rofi -show drun
+
+# Wallpaper Management
+super + z
+    feh --bg-fill --randomize ~/.config/walls/*
+
+# GUI WALL SELECTOR
+super + w
+    bash .config/bspwm/wall.sh
+
+# GUI POWER MENU
+super + n
+    bash .config/bspwm/log.sh
+
+# File Manager
+super + e
+    dolphin
+
+# Reload sxhkd config
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# Dedicated floating toggle
+super + space
+    bspc node -t floating
+
+# -----------------------------------------------------------------------------
+# FUNCTION KEYS (F1 - F12) - SYSTEM & SUPER USER
+# -----------------------------------------------------------------------------
+
+# Audio (pamixer)
+F1
+    pamixer --toggle-mute
+F2
+    pamixer --decrease 5
+F3
+    pamixer --increase 5
+
+# Force Kill
+F4
+    xkill
+
+# System Resource Monitor
+F5
+    konsole -e htop
+
+# Media Control
+F6
+    playerctl previous
+F7
+    playerctl play-pause
+F8
+    playerctl next
+
+# Network Interface Management
+F9
+    konsole -e nmtui
+
+# Power Management / Logout
+F10
+    bash .config/bspwm/log.sh
+
+# Brightness (brightnessctl)
+F11
+    brightnessctl set 5%-
+F12
+    brightnessctl set +5%
+
+# -----------------------------------------------------------------------------
+# FLOATING WINDOW MOVEMENT & SWITCHING
+# -----------------------------------------------------------------------------
+
+# Move floating windows (Standard: 20px)
+super + shift + {Left,Down,Up,Right}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Move floating windows (Precise: 5px)
+super + shift + ctrl + {Left,Down,Up,Right}
+    bspc node -v {-5 0,0 5,0 -5,5 0}
+
+# Switch focused window
+super + Tab
+    bspc node -f next.local
+
+# -----------------------------------------------------------------------------
+# INSERT, DELETE & SPECIAL KEYS
+# -----------------------------------------------------------------------------
+
+# Sync secondary selection to clipboard
+Insert
+    xsel -ob | xsel -ib
+
+# Kill the focused window
+super + Delete
+    bspc quit
+
+# Print Screen
+Print
+    scrot ~/Pictures/%Y-%m-%d-%H-%M-%S.png
+
+# -----------------------------------------------------------------------------
+# BSPWM NAVIGATION & DESKTOPS
+# -----------------------------------------------------------------------------
+
+# Focus node in direction
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
+
+# Focus Desktop 1-10
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
+
+# Send Node to Desktop 1-10
+super + shift + {1-9,0}
+    bspc node -d '^{1-9,10}'
+
+# -----------------------------------------------------------------------------
+# WINDOW STATES & LAYOUT
+# -----------------------------------------------------------------------------
+
+# Toggle layouts
+super + m
+    bspc desktop -l next
+
+# Set window state
+super + {t,shift + t,s,f}
+    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Set node flags
+super + ctrl + s
+    bspc node -g {marked,locked,sticky,private}
+
+# -----------------------------------------------------------------------------
+# RESIZE & PRESELECT
+# -----------------------------------------------------------------------------
+
+# Expand window outward
+super + alt + {Left,Down,Up,Right}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Contract window inward
+super + alt + shift + {Left,Down,Up,Right}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Preselect direction
+super + ctrl + {Left,Down,Up,Right}
+    bspc node -p {west,south,north,east}
+
+# Cancel preselection
+super + ctrl + space
+    bspc node -p cancel

@@ -1,0 +1,100 @@
+configuration {
+    modi:                "drun,run,window";
+    show-icons:          true;
+    icon-theme:          "WhiteSur-dark";
+    display-drun:        "󰣇";
+    display-run:         " ";
+    display-window:      "󰍲";
+    drun-display-format: "{name}";
+    font:                "JetBrainsMono Nerd Font 11";
+}
+
+@theme "/dev/null"
+
+* {
+    bg:               #0F0F11;
+    bg-alt:           #24262E;
+    fg:               #D1D4D9;
+    accent:           #B0B3B8;
+    border-col:       #4A4D54;
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    width:            408px;
+    background-color: @bg;
+    /* Removed the outline by setting border to 0 */
+    border:           0;
+    border-color:     @border-col;
+    padding:          10px;
+}
+
+mainbox {
+    orientation:      horizontal;
+    spacing:          8px;
+    children:         [ mode-switcher, right-column ];
+}
+
+right-column {
+    orientation:      vertical;
+    spacing:          8px;
+    children:         [ inputbar, listview ];
+}
+
+mode-switcher {
+    orientation:      vertical;
+    spacing:          6px;
+}
+
+button {
+    padding:          4px;
+    width:            33px;
+    background-color: @bg-alt;
+    text-color:       @fg;
+    vertical-align:   0.5;
+    horizontal-align: 0.5;
+    border-radius:    15px;
+}
+
+button selected {
+    background-color: @accent;
+    text-color:       @bg;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    padding:          6px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+    padding:    0px 4px 0px 4px; /* Add some breathing room on the sides */
+
+}
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @accent; /* Or use @fg for a more subtle look */
+    vertical-align:    0.5;
+}
+
+listview {
+    lines:            7;
+    fixed-height:     0;
+    spacing:          2px;
+}
+
+element {
+    padding:          5px 9px;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color:       @accent;
+}
+
+element-icon {
+    size: 19px;
+}
