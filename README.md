@@ -63,6 +63,6 @@ sudo chmod +x DFPKGS.sh &&
 bash DFPKGS.sh
 ```
 <div align="center">
-  <img src="Assets/chi.png" alt="Chibi" width="200">
+  <img src="Assets/chi.png" alt="Chibi" width="200"><br>
   <i>« Stay Comfy, Stay Code »</i>
 </div>
