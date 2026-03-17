@@ -80,5 +80,6 @@ bash DFPKGS.sh
   <img src="Assets/chi.png" alt="Chibi" width="200"><br>
   <i>« Stay Comfy, Stay Code »</i>
 </div>
-
-![Waves](https://capsule-render.vercel.app/api?type=waving&color=auto&height=120&section=footer)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
+</p>
