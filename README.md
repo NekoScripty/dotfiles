@@ -74,7 +74,7 @@ The configuration is split to support both high-end desktops and portable machin
 ### 1. Dependencies
 Ensure you have the core toolkit installed:
 ```bash
-git clone https://github.com/NekoScripty/Dotfiles.git
+git clone https://github.com/NekoScripty/NekoDots.git
 && cd NekoDots
 ```
 ## ⚙️ Then Auto Installation Script 
