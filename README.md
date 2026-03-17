@@ -33,7 +33,7 @@
 </div>
 
 <p align="center">
-<strong>🌑 Obsidian</strong> is my personal "Formal Black" setup designed for deep work. It’s built on Arch and bspwm, focusing on a clean aesthetic without sacrificing speed. Instead of the usual static X11 feel, I’ve used custom scripts and animations to make the desktop feel fluid and modern. classic stability and modern Wayland-tier aesthetics.
+<strong>🌑 Obsidian</strong> is my personal "Formal Black" setup designed for deep work.<br> It’s built on Arch and bspwm, focusing on a clean aesthetic without sacrificing speed.<br> Instead of the usual static X11 feel, I’ve used custom scripts and animations to make the desktop feel fluid and modern.<br> classic stability and modern Wayland-tier aesthetics.
 </p>
   
 ---
