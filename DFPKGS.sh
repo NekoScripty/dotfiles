@@ -28,7 +28,7 @@ fi
 ## --- STAGE 2: AUR HELPER & PACKAGES ---
 if command -v yay &> /dev/null; then
     log_info "Installing AUR packages..."
-    if yay -S --needed --noconfirm whitesur-icon-theme vibrant-cli neofetch; then
+    if yay -S --needed --noconfirm whitesur-icon-theme vibrant-cli neofetch cava; then
         log_success "AUR packages installed."
     else
         log_info "AUR installation failed, but continuing with core setup..."
