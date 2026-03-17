@@ -2,10 +2,11 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%" />
 </p>
 
+
 <p align="center">
-  <img src="https://img.shields.io/badge/License-GPLv3-000000?style=for-the-badge&logo=gnu&logoColor=white" />
-  <img src="https://img.shields.io/badge/WM-bspwm-ffffff?style=for-the-badge&logoColor=black" />
-  <img src="https://img.shields.io/badge/Distro-Arch-555555?style=for-the-badge&logo=arch-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-GPLv3-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/WM-bspwm-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Distro-Arch-000000?style=for-the-badge" />
 </p>
 
 ## 📸 Visual Showcase
