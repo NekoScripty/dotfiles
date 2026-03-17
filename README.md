@@ -49,11 +49,3 @@ The configuration is split to support both high-end desktops and portable machin
 * **Compositor**: Glx-backend optimized for NVIDIA/Intel to ensure tear-free animations.
 
 ---
-
-## 📥 Installation
-
-### 1. Dependencies
-Ensure you have the core toolkit installed:
-```bash
-sudo pacman -S bspwm sxhkd polybar rofi kitty feh pamixer brightnessctl playerctl
-# Recommended compositor for animations: picom-ftlabs-git
