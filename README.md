@@ -8,8 +8,7 @@
   <p align="center">
       A Professional, Minimalist BSPWM Environment for Arch Linux
   </p>
-</p>
-
+  
 <p align="center">
   <img src="https://img.shields.io/badge/License-GPLv3-000000?style=for-the-badge" />
   <img src="https://img.shields.io/badge/WM-bspwm-000000?style=for-the-badge" />
@@ -33,6 +32,10 @@
   </table>
 </div>
 
+<p align="center">
+<strong>Obsidian</strong>is a curated "Formal Black" development environment built for focus and fluidity. While many X11 setups feel static, this rice utilizes custom animation logic and a suite of dedicated shell-scripts (the "Internal API") to bridge the gap between classic stability and modern Wayland-tier aesthetics.
+</p>
+  
 ---
 
 ## 🎨 Design Philosophy
