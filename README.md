@@ -2,12 +2,10 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%" />
 </p>
 
-
-<h1 align="center">🌑 My Dotfiles OBSIDIAN</h1>
 <p align="center">
-  <strong>A Formal Black BSPWM Environment For Focus and Fluidity.</strong>
-  <br />
-  <i>Bridging the gap between X11 stability and modern Wayland Aesthetics.</i>
+  <img src="https://img.shields.io/badge/License-GPLv3-000000?style=for-the-badge&logo=gnu&logoColor=white" />
+  <img src="https://img.shields.io/badge/WM-bspwm-ffffff?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Distro-Arch-555555?style=for-the-badge&logo=arch-linux&logoColor=white" />
 </p>
 
 <p align="center">
