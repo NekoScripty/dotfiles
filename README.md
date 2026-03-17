@@ -32,12 +32,14 @@ Unlike static setups, **Obsidian** treats the desktop as a living workspace. Eve
 * **Palette:** Deep Obsidian (`#000000`) paired with Crisp Slate (`#B0B3B8`).
 * **Compositor:** Custom `picom` build featuring `dual_kawase` blurring and slide-in workspace transitions.
 * **Typography:** `JetBrainsMono Nerd Font` for surgical technical clarity.
-* 
+```plaintext
 ├── .config
 │   ├── bspwm/      # Window manager logic
 │   ├── sxhkd/      # Keybinding configs
 │   └── polybar/    # Status bar modules
 └── scripts/        # Custom automation tools
+```
+
 ---
 
 ## ⚙️ The Script API
