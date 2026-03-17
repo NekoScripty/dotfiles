@@ -16,6 +16,21 @@
   <img src="https://img.shields.io/badge/Distro-Arch-000000?style=for-the-badge" />
 </p>
 
+## 📸 Visual Showcase
+
+<div align="center">
+  <table border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td width="50%"><img src="Assets/1.png" alt="Clean Desktop" style="border-radius: 8px;"></td>
+      <td width="50%"><img src="Assets/2.png" alt="Power Menu" style="border-radius: 8px;"></td>
+    </tr>
+    <tr>
+      <td width="50%"><img src="Assets/3.png" alt="Rofi Launcher" style="border-radius: 8px;"></td>
+      <td width="50%"><img src="Assets/4.png" alt="Code Environment" style="border-radius: 8px;"></td>
+    </tr>
+  </table>
+</div>
+
 ---
 
 ## 🎨 Design Philosophy
@@ -50,20 +65,6 @@ Keybindings are handled by `sxhkd`. The logic is grouped by "System", "Media", a
 | **System Resource Monitor** | `F5` |
 
 ---
-## Preview
-
-<h3 align="center">Screenshots</h3>
-
-<table border="0">
-  <tr>
-    <td><img src="Assets/1.png" alt="Clean-Desktop" width="100%"></td>
-    <td><img src="Assets/2.png" alt="Power-Menu" width="100%"></td>
-  </tr>
-  <tr>
-    <td><img src="Assets/3.png" alt="Rofi" width="100%"></td>
-    <td><img src="Assets/4.png" alt="Editor/Code" width="100%"></td>
-  </tr>
-</table>
 
 ## 🔋 Modular Infrastructure
 The configuration is split to support both high-end desktops and portable machines:
