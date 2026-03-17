@@ -1,0 +1,84 @@
+! ------------------------------------------------------------------------------
+! 1. TRANSPARENCY & CORE SETTINGS
+! ------------------------------------------------------------------------------
+xterm*termName: xterm-256color
+xterm*locale: true
+xterm*utf8: 1
+xterm*saveLines: 16384
+xterm*scrollBar: false
+xterm*toolBar: false
+xterm*internalBorder: 0
+xterm*loginShell: true
+
+! Background set to Black with 50% Opacity (0-65535 scale internally, but 0.0-1.0 works)
+xterm*background: #000000
+xterm*opacity: 128
+! Alternative: If your version of xterm supports the modern RGBA string:
+! xterm*background: [80]#000000
+
+! ------------------------------------------------------------------------------
+! 2. BACKSPACE & PASSWD FIX (Standardized Erase)
+! ------------------------------------------------------------------------------
+xterm*backarrowKey: false
+xterm*ttyModes: erase ^?
+xterm*ptyInitialErase: true
+
+! ------------------------------------------------------------------------------
+! 3. FONT & GLYPH FIXES ( Powerline support)
+! ------------------------------------------------------------------------------
+xterm*faceName: JetBrainsMono Nerd Font:size=11:antialias=true
+xterm*boldFont: JetBrainsMono Nerd Font:bold:size=11:antialias=true
+xterm*italicFont: JetBrainsMono Nerd Font:italic:size=11:antialias=true
+
+! This closes the gap between Powerline arrows
+xterm*letterSpace: -1
+xterm*scaleHeight: 1.0
+xterm*forceBoxChars: true
+
+! ------------------------------------------------------------------------------
+! 4. TOKYO NIGHT COLOR PALETTE (Clean & High Contrast)
+! ------------------------------------------------------------------------------
+xterm*foreground: #c0caf5
+xterm*cursorColor: #f7768e
+xterm*cursorBlink: true
+
+! Colors 0-15
+xterm*color0:  #15161e
+xterm*color8:  #414868
+xterm*color1:  #f7768e
+xterm*color9:  #f7768e
+xterm*color2:  #9ece6a
+xterm*color10: #9ece6a
+xterm*color3:  #e0af68
+xterm*color11: #e0af68
+xterm*color4:  #7aa2f7
+xterm*color12: #7aa2f7
+xterm*color5:  #bb9af7
+xterm*color13: #bb9af7
+xterm*color6:  #7dcfff
+xterm*color14: #7dcfff
+xterm*color7:  #a9b1d6
+xterm*color15: #c0caf5
+
+! ------------------------------------------------------------------------------
+! 5. FULL FUNCTION KEYBOARD TRANSLATIONS
+! ------------------------------------------------------------------------------
+xterm*vt100.translations: #override \
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+    Shift <Key>Insert: insert-selection(CLIPBOARD) \n\
+    Ctrl <Key>plus: larger-font() \n\
+    Ctrl <Key>minus: smaller-font() \n\
+    Ctrl <Key>0: set-vt-font(d) \n\
+    <Btn4Down>: scroll-back(5,line) \n\
+    <Btn5Down>: scroll-forw(5,line) \n\
+    Ctrl <Btn1Down>: main-menu() \n\
+    Ctrl <Btn2Down>: vt-menu() \n\
+    Ctrl <Btn3Down>: font-menu()
+
+! ------------------------------------------------------------------------------
+! 6. ADVANCED RICER TWEAKS
+! ------------------------------------------------------------------------------
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,58:48,61:48,63-64:48,126:48
+xterm*eightBitInput: false
+xterm*metaSendsEscape: true
