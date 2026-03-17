@@ -64,7 +64,7 @@ The configuration is split to support both high-end desktops and portable machin
 
 * **Desktop: (`config.ini`)**: Optimized for static network setups and multi-monitor layouts.
 > [!NOTE]
-> **Laptop Setup:** To enable the battery module, remove `config.ini` and delete the word `LAP` from the configuration.
+> **Laptop Setup:** To enable the battery module, remove `config.ini` and delete the word `LAP` from the {configLAP.ini}.
 * **Laptop: (`configLAP.ini`)**: Features dynamic battery ramps (`` to ``) and backlight control modules.
 * **Compositor**: Glx-backend optimized for NVIDIA/Intel to ensure tear-free animations.
 
