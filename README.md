@@ -18,12 +18,13 @@
 
 ---
 
-## 🎨 Design Language
-* **Palette:** Deep Obsidian (`#000000`) paired with Crisp Slate (`#B0B3B8`). 
-* **Compositor:** Custom `picom` configuration featuring `dual_kawase` blurring and slide-in workspace transitions.
-* **Typography:** `JetBrainsMono Nerd Font` for technical clarity.
-* **UX:** Dynamic 1px borders and minimal gaps for a tight, high-density professional workspace.
+## 🎨 Design Philosophy
+Unlike static setups, **Obsidian** treats the desktop as a living workspace. Every shadow, transition, and border is calculated to provide a high-density, professional experience.
 
+* **Palette:** Deep Obsidian (`#000000`) paired with Crisp Slate (`#B0B3B8`).
+* **Compositor:** Custom `picom` build featuring `dual_kawase` blurring and slide-in workspace transitions.
+* **Typography:** `JetBrainsMono Nerd Font` for surgical technical clarity.
+* 
 ---
 
 ## ⚙️ The Script API
