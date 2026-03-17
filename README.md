@@ -49,3 +49,15 @@ The configuration is split to support both high-end desktops and portable machin
 * **Compositor**: Glx-backend optimized for NVIDIA/Intel to ensure tear-free animations.
 
 ---
+## 📥 Installation
+
+### 1. Dependencies
+Ensure you have the core toolkit installed:
+```bash
+git clone https://github.com/NekoScripty/Dotfiles.git
+&& cd Dotfiles
+```
+## ⚙️ Then Auto Installation Script 
+```bash
+bash DFPKGS.sh
+```
