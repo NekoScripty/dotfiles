@@ -8,10 +8,8 @@
   <img src="https://img.shields.io/badge/WM-bspwm-000000?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Distro-Arch-000000?style=for-the-badge" />
   <img src="https://img.shields.io/github/stars/NekoScripty/NekoDots?style=for-the-badge&logo=github&color=30363D&logoColor=white" />
-  <img src="https://img.shields.io/github/commit-activity/m/NekoScripty/NekoDots?style=for-the-badge&logo=git&color=30363D&logoColor=white" />
-  <img src="https://komarev.com/ghpvc/?username=NekoScripty-NekoDots&label=VIEWS&color=30363D&style=for-the-badge" />  
-  <img src="https://img.shields.io/github/last-commit/NekoScripty/NekoDots?style=for-the-badge&logo=clock&color=30363D&logoColor=white" />
-</p>
+  <img src="https://komarev.com/ghpvc/?username=NekoScripty-NekoDots&label=VIEWS&color=30363D&style=for-the-badge" /> 
+  </p>
 
 ## 📸 Visual Showcase
 
