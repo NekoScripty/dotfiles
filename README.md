@@ -5,9 +5,9 @@
 
 <h1 align="center">🌑 OBSIDIAN</h1>
 <p align="center">
-  <strong>A Formal Black BSPWM environment engineered for focus and fluidity.</strong>
+  <strong>A Formal Black BSPWM Environment For Focus and Fluidity.</strong>
   <br />
-  <i>Bridging the gap between X11 stability and modern Wayland aesthetics.</i>
+  <i>Bridging the gap between X11 stability and modern Wayland Aesthetics.</i>
 </p>
 
 <p align="center">
