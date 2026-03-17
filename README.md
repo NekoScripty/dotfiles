@@ -33,6 +33,11 @@ Unlike static setups, **Obsidian** treats the desktop as a living workspace. Eve
 * **Compositor:** Custom `picom` build featuring `dual_kawase` blurring and slide-in workspace transitions.
 * **Typography:** `JetBrainsMono Nerd Font` for surgical technical clarity.
 * 
+├── .config
+│   ├── bspwm/      # Window manager logic
+│   ├── sxhkd/      # Keybinding configs
+│   └── polybar/    # Status bar modules
+└── scripts/        # Custom automation tools
 ---
 
 ## ⚙️ The Script API
