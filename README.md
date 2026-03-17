@@ -46,12 +46,12 @@ Keybindings are handled by `sxhkd`. The logic is grouped by "System", "Media", a
 
 <table border="0">
   <tr>
-    <td><img src="screenshots/clean.png" alt="Clean Desktop" width="100%"></td>
-    <td><img src="screenshots/terminal.png" alt="Terminal Setup" width="100%"></td>
+    <td><img src="Assets/1.png" alt="Clean Desktop" width="100%"></td>
+    <td><img src="Assets/2.png" alt="Terminal Setup" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="screenshots/browser.png" alt="Browser Rice" width="100%"></td>
-    <td><img src="screenshots/code.png" alt="Editor/Code" width="100%"></td>
+    <td><img src="Assets/3.png" alt="Browser Rice" width="100%"></td>
+    <td><img src="Assets/4.png" alt="Editor/Code" width="100%"></td>
   </tr>
 </table>
 
