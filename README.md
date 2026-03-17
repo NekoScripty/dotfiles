@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=60&section=footer&invert=true&animation=twinkling" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%" />
 </p>
+
 
 # 🌑 My Dotfiles
 ### A Professional, Minimalist BSPWM Environment for Arch Linux
