@@ -33,7 +33,7 @@
 </div>
 
 <p align="center">
-<strong>Obsidian</strong>is a curated "Formal Black" development environment built for focus and fluidity. While many X11 setups feel static, this rice utilizes custom animation logic and a suite of dedicated shell-scripts (the "Internal API") to bridge the gap between classic stability and modern Wayland-tier aesthetics.
+<strong>🌑 Obsidian</strong> is acurated "Formal Black" development environment built for focus and fluidity. While many X11 setups feel static, this rice utilizes custom animation logic and a suite of dedicated shell-scripts (the "Internal API") to bridge the gap between classic stability and modern Wayland-tier aesthetics.
 </p>
   
 ---
