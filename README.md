@@ -3,7 +3,7 @@
 </p>
 
 
-<h1 align="center">🌑 OBSIDIAN</h1>
+<h1 align="center">🌑 My Dotfiles OBSIDIAN Theme</h1>
 <p align="center">
   <strong>A Formal Black BSPWM Environment For Focus and Fluidity.</strong>
   <br />
