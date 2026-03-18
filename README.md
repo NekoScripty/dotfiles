@@ -102,8 +102,3 @@ bash DFPKGS.sh
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 </p>
-
-<blockquote>
-    <p>The music is not in the notes, but in the silence between.</p>
-    <footer>— <cite>Wolfgang Amadeus Mozart</cite></footer>
-</blockquote>
