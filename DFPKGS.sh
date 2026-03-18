@@ -17,7 +17,7 @@ fi
 
 ## --- STAGE 1: CORE REPOSITORIES ---
 log_info "Updating system and installing core packages..."
-CORE_PKGS="bspwm sxhkd polybar rofi dmenu procps-ng brightnessctl pamixer playerctl xorg-xkill xorg-xrandr xsel xclip xterm konsole dolphin chromium htop networkmanager feh scrot xorg-server xorg-xinit xf86-input-libinput xorg-xprop xorg-xwininfo bleachbit materia-gtk-theme lightdm lightdm-gtk-greeter ttf-font-awesome adobe-source-han-sans-jp-fonts ttf-iosevka-nerd gwenview git nano curl wget less rust net-tools htop krita libdbusmenu-gtk3 libdbusmenu-qt5"
+CORE_PKGS="bspwm sxhkd polybar rofi dmenu procps-ng brightnessctl pamixer playerctl xorg-xkill xorg-xrandr xsel xclip xterm konsole dolphin chromium htop networkmanager feh scrot xorg-server xorg-xinit xf86-input-libinput xorg-xprop xorg-xwininfo bleachbit materia-gtk-theme lightdm lightdm-gtk-greeter ttf-font-awesome adobe-source-han-sans-jp-fonts ttf-iosevka-nerd gwenview git nano curl wget less rust net-tools htop krita libdbusmenu-gtk3 libdbusmenu-qt5 qt6ct qt5ct breeze breeze-icons"
 
 if sudo pacman -Syu --needed --noconfirm $CORE_PKGS; then
     log_success "Core packages installed."
