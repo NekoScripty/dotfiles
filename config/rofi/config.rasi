@@ -6,55 +6,58 @@ configuration {
     display-run:         " ";
     display-window:      "󰍲";
     drun-display-format: "{name}";
-    font:                "JetBrainsMono Nerd Font 11";
+    font:                "JetBrainsMono Nerd Font 10";
 }
 
 @theme "/dev/null"
 
 * {
+    /* Obsidian Palette */
     bg:               #0F0F11;
-    bg-alt:           #24262E;
+    bg-alt:           #1A1B1F;
     fg:               #D1D4D9;
-    accent:           #B0B3B8;
-    border-col:       #4A4D54;
+    accent:           #5294E2;
+    border-col:       #24262E;
+
     background-color: transparent;
     text-color:       @fg;
 }
 
 window {
-    width:            408px;
+    width:            405px; /* Refined compact width */
     background-color: @bg;
-    /* Removed the outline by setting border to 0 */
-    border:           0;
+    border:           1px;
     border-color:     @border-col;
+    border-radius:    10px;
     padding:          10px;
 }
 
 mainbox {
     orientation:      horizontal;
-    spacing:          8px;
+    spacing:          10px;
     children:         [ mode-switcher, right-column ];
 }
 
 right-column {
     orientation:      vertical;
-    spacing:          8px;
+    spacing:          6px;
     children:         [ inputbar, listview ];
 }
 
 mode-switcher {
     orientation:      vertical;
-    spacing:          6px;
+    spacing:          8px;
+    width:            40px;
 }
 
 button {
-    padding:          4px;
-    width:            33px;
+    padding:          10px;
+    width:            32px;
     background-color: @bg-alt;
     text-color:       @fg;
     vertical-align:   0.5;
     horizontal-align: 0.5;
-    border-radius:    15px;
+    border-radius:    8px;
 }
 
 button selected {
@@ -64,30 +67,34 @@ button selected {
 
 inputbar {
     background-color: @bg-alt;
-    padding:          6px;
+    padding:          8px;
+    border-radius:    8px;
     spacing:          8px;
     children:         [ prompt, entry ];
 }
 
 prompt {
-    text-color: @accent;
-    padding:    0px 4px 0px 4px; /* Add some breathing room on the sides */
-
+    text-color:       @accent;
+    padding:          0px 4px;
 }
+
 entry {
     placeholder:       "Search...";
-    placeholder-color: @accent; /* Or use @fg for a more subtle look */
+    placeholder-color: #4A4D54;
     vertical-align:    0.5;
 }
 
 listview {
     lines:            7;
-    fixed-height:     0;
-    spacing:          2px;
+    fixed-height:     false;
+    spacing:          4px;
+    scrollbar:        false;
 }
 
 element {
-    padding:          5px 9px;
+    padding:          6px 8px;
+    border-radius:    6px;
+    spacing:          10px;
 }
 
 element selected {
@@ -96,5 +103,9 @@ element selected {
 }
 
 element-icon {
-    size: 19px;
+    size:             20px; /* Scaled down slightly for the 405px width */
+}
+
+element-text {
+    vertical-align:   0.5;
 }
