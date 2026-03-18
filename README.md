@@ -96,7 +96,7 @@ bash DFPKGS.sh
 ```
 <div align="center">
   <img src="Assets/chi.png" alt="Chibi" width="200"><br>
-  <i>~/ Stay Comfy, Stay Code /~</i>
+  <figcaption>~/ Stay Comfy, Stay Code /~</figcaption>
 </div>
 
 <p align="center">
