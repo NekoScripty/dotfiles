@@ -96,7 +96,7 @@ bash DFPKGS.sh
 ```
 <div align="center">
   <img src="Assets/chi.png" alt="Chibi" width="200"><br>
-  <i>~ Stay Comfy, Stay Code ~</i>
+  <i>~/ Stay Comfy, Stay Code /~</i>
 </div>
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
