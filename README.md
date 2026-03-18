@@ -98,6 +98,12 @@ bash DFPKGS.sh
   <img src="Assets/chi.png" alt="Chibi" width="200"><br>
   <i>~/ Stay Comfy, Stay Code /~</i>
 </div>
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 </p>
+
+<blockquote>
+    <p>The music is not in the notes, but in the silence between.</p>
+    <footer>— <cite>Wolfgang Amadeus Mozart</cite></footer>
+</blockquote>
