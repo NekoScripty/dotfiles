@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Configuration
 WALL_DIR="$HOME/.config/walls"
 
-# Compact Dynamic Gallery - Flush Top
 ROFI_STYLE='
 window {
     width: 45%;
@@ -50,12 +48,10 @@ element-text {
 }
 '
 
-# Generate list and launch Rofi
 choice=$(ls "$WALL_DIR" | while read -r file; do
     echo -en "$file\0icon\x1f$WALL_DIR/$file\n"
 done | rofi -dmenu -i -theme-str "$ROFI_STYLE")
 
-# Apply selection
 if [ -n "$choice" ]; then
     feh --bg-fill "$WALL_DIR/$choice"
     notify-send "System" "Wallpaper Updated: $choice"
