@@ -1,0 +1,110 @@
+configuration {
+    modi:                "drun,run,window";
+    show-icons:          true;
+    icon-theme:          "WhiteSur-dark";
+    display-drun:        "󰣇";
+    display-run:         " ";
+    display-window:      "󰍲";
+    drun-display-format: "{name}";
+    font:                "JetBrainsMono Nerd Font 9";
+}
+
+@theme "/dev/null"
+
+* {
+    bg:               #0F0F11;
+    bg-alt:           #1A1B1F;
+    fg:               #D1D4D9;
+    accent:           #5294E2;
+    border-col:       #24262E;
+
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    width:            380px; /* Reduced from 520px for a slim look */
+    background-color: @bg;
+    border:           1px;
+    border-color:     @border-col;
+    border-radius:    8px;
+    padding:          10px;
+}
+
+mainbox {
+    orientation:      horizontal;
+    spacing:          10px;
+    children:         [ mode-switcher, right-column ];
+}
+
+right-column {
+    orientation:      vertical;
+    spacing:          6px;
+    children:         [ inputbar, listview ];
+}
+
+mode-switcher {
+    orientation:      vertical;
+    spacing:          6px;
+    width:            35px; /* Slimmer sidebar */
+}
+
+button {
+    padding:          8px;
+    width:            30px;
+    background-color: @bg-alt;
+    text-color:       @fg;
+    vertical-align:   0.5;
+    horizontal-align: 0.5;
+    border-radius:    6px;
+}
+
+button selected {
+    background-color: @accent;
+    text-color:       @bg;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    padding:          6px;
+    border-radius:    6px;
+    spacing:          6px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @accent;
+    padding:          0px 2px;
+}
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: #4A4D54;
+    vertical-align:    0.5;
+}
+
+listview {
+    lines:            6; /* Reduced number of visible items */
+    fixed-height:     false;
+    spacing:          2px;
+    scrollbar:        false;
+}
+
+element {
+    padding:          4px 8px;
+    border-radius:    5px;
+    spacing:          8px;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color:       @accent;
+}
+
+element-icon {
+    size:             18px; /* Smaller icons for the smaller window */
+}
+
+element-text {
+    vertical-align:   0.5;
+}
