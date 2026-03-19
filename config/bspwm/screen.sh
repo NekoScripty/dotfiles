@@ -62,12 +62,30 @@ while true; do
     echo "   Error: Please put correct value (e.g. 1.0 or 1.2)."
 done
 
+# 5. Stretched (New Option)
+while true; do
+    read -p ">> Stretched Aspect Ratio? (y/n): " STRETCH_INPUT
+    if [[ "$STRETCH_INPUT" =~ ^(y|n)$ ]]; then
+        if [ "$STRETCH_INPUT" == "y" ]; then
+            STRETCH_VAL="Full"
+        else
+            STRETCH_VAL="Full aspect"
+        fi
+        break
+    fi
+    echo "   Error: Please enter 'y' for Yes (Stretched) or 'n' for No (Maintain Aspect)."
+done
+
 # --- 3. Execution ---
 echo -e "\n------------------------------------------------------------"
 echo "Status: Applying changes..."
 
+# First, apply the stretching property
+xrandr --output "$MON" --set "scaling mode" "$STRETCH_VAL" 2>/dev/null
+
+# Apply the rest of the configuration
 if xrandr --output "$MON" --mode "$RES" --rate "$RATE" --rotate "$ROT" --scale "${SCALE}x${SCALE}" 2>/dev/null; then
-    echo "Status: [ SUCCESS ] Display updated."
+    echo "Status: [ SUCCESS ] Display updated (Stretching: $STRETCH_VAL)."
 else
     echo "Status: [ FAILED ] xrandr rejected these values."
 fi
