@@ -14,11 +14,11 @@ configuration {
 
 * {
     /* Pure Monochrome Palette (90% Opacity) */
-    bg:               #0F0F0FE6; 
-    bg-alt:           #1F1F1FE6; 
-    fg:               #E0E0E0E6; 
-    accent:           #FFFFFFE6; 
-    border-col:       #2F2F2FE6; 
+    bg:               #000000E6;
+    bg-alt:           #1F1F1FE6;
+    fg:               #E0E0E0E6;
+    accent:           #FFFFFFE6;
+    border-col:       #2F2F2FE6;
 
     background-color: transparent;
     text-color:       @fg;
@@ -30,7 +30,7 @@ window {
     background-color: @bg;
     border:           2px;
     border-color:     @border-col;
-    border-radius:    16px; 
+    border-radius:    16px;
     padding:          2px;
 }
 
