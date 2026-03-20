@@ -1,9 +1,7 @@
 #! /bin/sh
-# picom &
+
 pgrep -x sxhkd > /dev/null || sxhkd &
-#xrandr --query | grep " connected" | cut -d" " -f1 | xargs -I {} vibrant-cli {} 2.0 &
-#sudo rm -rf /etc/xdg/autostart
-#nice -n 19 xwinwrap -ov -ni -g 1920x1080 -- mpv --wid=%WID --loop --no-audio --hwdec=vaapi --vo=gpu --gpu-api=opengl --profile=fast --vd-lavc-fast --vd-lavc-threads=1 --cache=no --demuxer-readahead-secs=0 --demuxer-max-bytes=1M --vd-lavc-dr=yes --dither=no --correct-downscaling=no --scale=bilinear --hdr-compute-peak=no --video-sync=display-resample --framedrop=vo --terminal=no --ytdl=no --msg-level=all=no "Videos/livewall/1.mp4" &
+xrandr --query | grep " connected" | cut -d" " -f1 | xargs -I {} vibrant-cli {} 2.0 &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -18,4 +16,7 @@ bspc config focused_border_color "#595959"
 bspc config normal_border_color "#595959"
 bspc config top_padding 0
 
+# picom &
 polybar &
+sudo rm -rf /etc/xdg/autostart
+#nice -n 19 xwinwrap -ov -ni -g 1920x1080 -- mpv --wid=%WID --loop --no-audio --hwdec=vaapi --vo=gpu --gpu-api=opengl --profile=fast --vd-lavc-fast --vd-lavc-threads=1 --cache=no --demuxer-readahead-secs=0 --demuxer-max-bytes=1M --vd-lavc-dr=yes --dither=no --correct-downscaling=no --scale=bilinear --hdr-compute-peak=no --video-sync=display-resample --framedrop=vo --terminal=no --ytdl=no --msg-level=all=no "Videos/livewall/1.mp4" &
