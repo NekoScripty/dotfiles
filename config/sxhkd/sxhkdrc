@@ -38,6 +38,15 @@ super + n
 # RESPONSIVE STATE TOGGLES (IF/ELSE)
 # -----------------------------------------------------------------------------
 
+# Full screenshot with directory validation
+Print
+    if [ -d ~/Pictures/Screenshots ]; \
+    then \
+        scrot '~/Pictures/Screenshots/%Y-%m-%d_%H%M%S.png'; \
+    else \
+        mkdir -p ~/Pictures/Screenshots && scrot '~/Pictures/Screenshots/%Y-%m-%d_%H%M%S.png'; \
+    fi
+
 # Keyboard Backlight Loop (0 -> 50 -> 100 -> 0)
 F10
     BRIGHTNESS=$(brightnessctl --device='dell::kbd_backlight' get); \
