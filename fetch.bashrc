@@ -1,8 +1,3 @@
-# ==============================================================================
-# BASH ENTERPRISE CONFIG - FINAL PRO EDITION
-# Optimized for: i7-6600U | UHD 520 | bspwm
-# ==============================================================================
-
 # --- System & History ---
 export HISTCONTROL=ignoreboth:erasedups
 export HISTSIZE=10000
