@@ -7,7 +7,7 @@
 # 1. Check if an argument was provided
 if [ -z "$1" ]; then
     echo "❌ Usage:"
-    echo "   For Steam:  bash Gamemode.sh <AppID>"
+    echo "   For Steam:  bash Gamemode.sh <AppID> Properties > Update > ID"
     echo "   For .exe:   bash Gamemode.sh /path/to/game.exe"
     exit 1
 fi
