@@ -1,55 +1,48 @@
 #!/usr/bin/env bash
 
 # ==============================================================================
-# Game.sh - Max Performance Wrapper for Intel HD 520 / i7-6600U
+# Game.sh - Terminal Launcher for Intel HD 520 / i7-6600U
 # ==============================================================================
 
-# 1. Input Validation
-# Ensure a game executable or launch command is provided
+# 1. Check if an argument was provided
 if [ -z "$1" ]; then
-    echo "❌ Error: No game specified."
-    echo "Usage: ./Game.sh <path_to_game_executable> [additional_arguments...]"
+    echo "❌ Usage:"
+    echo "   For Steam:  bash Gamemode.sh <AppID>"
+    echo "   For .exe:   bash Gamemode.sh /path/to/game.exe"
     exit 1
 fi
 
-echo "🚀 Initializing Max Performance Mode..."
-
 # ==============================================================================
-# ENVIRONMENT VARIABLES & TWEAKS
+# PERFORMANCE ENVIRONMENT VARIABLES
 # ==============================================================================
-
-# --- OpenGL & Mesa Tweaks (Intel iGPU Specific) ---
-# Enables OpenGL multithreading. Helps your i7-6600U process graphics calls faster.
 export mesa_glthread=true
-
-# Disables VSync in OpenGL. This forces the GPU to render as fast as possible,
-# unlocking your max FPS (note: this may cause minor screen tearing).
 export vblank_mode=0
-
-# Disables Mesa's error checking overhead for a tiny performance bump.
 export MESA_NO_ERROR=1
-
-# --- DXVK & Wine/Proton Tweaks (For Windows games on Linux) ---
-# Enables asynchronous shader compilation to drastically reduce stuttering in-game.
 export DXVK_ASYNC=1
-export DXVK_STATE_CACHE=1
-
-# Enables Esync and Fsync to reduce CPU overhead and improve multithreading performance.
 export WINEESYNC=1
 export WINEFSYNC=1
-
-# Prioritize the discrete GPU (redundant here, but good practice for ensuring
-# the system doesn't fall back to software rendering).
 export DRI_PRIME=1
 
+echo "🚀 Performance Mode Engaged!"
+
 # ==============================================================================
-# EXECUTION
+# LAUNCH LOGIC
 # ==============================================================================
 
-echo "🎮 Launching via gamemoderun..."
+# Check if the input is a number (Steam AppID)
+if [[ "$1" =~ ^[0-9]+$ ]]; then
+    echo "🎮 Launching Steam AppID: $1..."
+    # Launch via steam command
+    exec gamemoderun steam steam://rungameid/"$1"
 
-# gamemoderun automatically changes the CPU governor to 'performance',
-# changes I/O priority, and optimizes the GPU power state.
-# "$@" passes the game and all its arguments perfectly intact.
+# Check if the input is a Windows .exe
+elif [[ "$1" == *.exe ]]; then
+    echo "🍷 Launching Windows Game: $1..."
+    # Launch via wine (ensure wine is installed)
+    exec gamemoderun wine "$@"
 
-exec gamemoderun "$@"
+# Fallback for native Linux binaries or other commands
+else
+    echo "🕹️ Launching Custom Command: $@"
+    exec gamemoderun "$@"
+fi
